@@ -1,1 +1,1 @@
-web: gunicorn main:app
+web: echo PORT $PORT && streamlit run  --server.port $PORT main.py --theme.base='light'
